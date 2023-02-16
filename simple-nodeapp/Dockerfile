@@ -1,6 +1,6 @@
 FROM node:alpine
 
-LABEL MAINTAINER "Latha "
+LABEL MAINTAINER "Saravanaprakash Thangavel "
 
 WORKDIR /app
 
