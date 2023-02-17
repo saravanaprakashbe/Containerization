@@ -1,6 +1,9 @@
 FROM node
 WORKDIR /app
-COPY build /app/build
-RUN npm install -g serve
-EXPOSE 3003
-ENTRYPOINT [ "serve", "-s", "build" ] 
+COPY . . 
+RUN npm install
+ENV REACT_APP_API_URL null
+EXPOSE 3000
+ENTRYPOINT ["npm"]
+CMD ["start"]
+
